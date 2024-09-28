@@ -1,0 +1,13 @@
+<h2>Рассчет квадрата</h2>
+<form id="figureForm" method="post" action="/calculate/square">
+    <input type="hidden" name="figureType" value="square">
+    <label for="side">Длина стороны:</label>
+    <input type="number" id="side" name="side" required>
+    <label for="operation">Операция:</label>
+    <select name="operationType" id="operation" required>
+        <option value="area">Площадь</option>
+        <option value="perimeter">Периметр</option>
+    </select>
+    <button type="submit">Рассчитать</button>
+</form>
+

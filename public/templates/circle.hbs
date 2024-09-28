@@ -1,0 +1,13 @@
+<h2>Расчет круга</h2>
+<form id="figureForm" method="post" action="/calculate/circle">
+    <input type="hidden" name="figureType" value="circle">
+    <label for="radius">Радиус:</label>
+    <input type="number" id="radius" name="radius" required>
+    <label for="operation">Операция:</label>
+    <select name="operationType" id="operation" required>
+        <option value="area">Площадь</option>
+        <option value="perimeter">Периметр</option>
+        <option value="diameter">Диаметр</option>
+    </select>
+    <button type="submit">Рассчитать</button>
+</form>

@@ -1,0 +1,26 @@
+{
+  "name": "geometryproject2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.0",
+    "@types/handlebars": "^4.1.0",
+    "body-parser": "^1.20.3",
+    "copyfiles": "^2.4.1",
+    "hbs": "^4.2.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "handlebars": "^4.7.8"
+  },
+  "type":"module"
+}
