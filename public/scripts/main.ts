@@ -1,8 +1,7 @@
 import { loadForm } from "./loadForm.js";
 
 /**
- * Обработчики событий для кнопок выбора геометрических фигур
- * после полной загрузки содержимого документа.
+ * Обработчики событий для кнопок после полной загрузки содержимого документа.
  */
 document.addEventListener('DOMContentLoaded', () => {
     const triangleButton = document.getElementById('triangleButton') as HTMLButtonElement;

@@ -5,7 +5,7 @@
  * 
  *  @param resultObj - Объект, содержащий результат вычислений
  * 
- * @returns void - Функция ничего не возвращает
+ * @returns {void} - Функция ничего не возвращает
  */
 export function displayResult(resultObj: {result: number}): void {
     const resultContainer = document.getElementById('resultContainer');

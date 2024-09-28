@@ -6,7 +6,7 @@
  * @param figure - Тип фигуры для вычислений
  * @param data - Данные для вычислений
  * 
- * @returns Promise, который разрешается в объект результата, полученного от сервера
+ * @returns {Promise} который разрешается в объект результата, полученного от сервера
  */
 export async function calculateFigure(figure: string, data: {}): Promise<{result: number}> {
     try{

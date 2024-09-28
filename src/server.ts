@@ -12,15 +12,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const port = process.env.PORT || 3000;
 
-// Middlaewares
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, '../public')));
-
 const circleController = new CircleController();
 const rectangleController = new RectangleController();
 const equilateralTriangleController = new EquilateralTriangleController();
 const squareController = new SquareController();
+
+// Middlaewares
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Роуты
 app.get('/', (req, res) => {
@@ -31,7 +31,6 @@ app.post('/calculate/circle', (req, res) => circleController.calculate(req, res)
 app.post('/calculate/rectangle', (req, res) => rectangleController.calculate(req, res));
 app.post('/calculate/equilateralTriangle', (req, res) => equilateralTriangleController.calculate(req, res));
 app.post('/calculate/square', (req, res) => squareController.calculate(req, res));
-
 
 // Обработка запросов на шаблоны
 app.get('/templates/:name', (req, res) => {
